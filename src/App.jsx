@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./components/Home";
@@ -10,9 +11,13 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./app.css";
 
+
 function App() {
   useState(() => {
-    console.log(new QuizController());
+    new QuizController();
+    QuizController.instance.fetchNewQuiz('', 0, (quizModel) => {
+      console.log(quizModel);
+    });
   }, []);
 
   return (
