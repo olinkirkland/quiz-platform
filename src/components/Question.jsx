@@ -1,6 +1,7 @@
 // import { useNavigate, useLocation, Outlet, NavLink } from "react-router-dom";
 
 export default function Question({ question, chooseAnswer }) {
+  if (!question) return <>No question!</>;
   return (
     <>
       <h3>{`Title: ${question.title}`}</h3>
