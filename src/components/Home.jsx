@@ -31,10 +31,8 @@ export const Home = () => {
             <Typography variant="h3">Prepare to</Typography>
             <Typography variant="h1">Leben in</Typography>
             <Typography variant="h1">Deutschland</Typography>
-            <Button
+            <Button id="btn-main"
               variant="contained"
-              size="large"
-              style={{ marginTop: "24px", marginBottom: "16px" }}
             >
               Start
             </Button>
@@ -44,7 +42,7 @@ export const Home = () => {
             <Typography variant="h5" style={{ marginTop: "24px" }}>
               OR SELECT A QUESTION SET{" "}
             </Typography>
-            <div className="quizSetm">
+            <div>
               <Link className="quizSet" href="#" color="inherit">
                 Berlin
               </Link>

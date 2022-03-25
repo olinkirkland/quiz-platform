@@ -3,3 +3,21 @@
   width: 50px;
   height: 50px;
 }
+
+.quizSet {
+  display: inline-block;
+  padding: 24px;
+}
+
+.bodybox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#btn-main {
+margin-top: 24px;
+margin-bottom: 16px;
+font-size: 18px;
+width: 128px;
+}
