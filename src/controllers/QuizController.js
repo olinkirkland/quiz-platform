@@ -13,13 +13,15 @@ export default class QuizController {
   }
 
   fetchNewQuiz(topic, questionCount, callback) {
-    // Fetches a quiz
-    console.log('fetch new quiz');
+    // Fetch a quiz from the backend
+
     let quiz = QuizModel.fromUntyped(mock);
     callback(quiz);
   }
 
-  submitQuizResults(quizModel) {
-    // Submits a completed quiz
+  submitQuizResults(quizModel, callback) {
+    // Submit a completed quiz
+
+    callback();
   }
 }
