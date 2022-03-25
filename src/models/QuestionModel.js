@@ -1,7 +1,7 @@
 export default class QuestionModel {
-  constructor(id, question, text, number, imageUrl, topic, language, answers) {
+  constructor(id, title, text, number, imageUrl, topic, language, answers) {
     this.id = id;
-    this.question = question;
+    this.title = title;
     this.text = text;
     this.number = number;
     this.imageUrl = imageUrl;
@@ -16,7 +16,7 @@ export default class QuestionModel {
 
   static fromUntyped(u) {
     const id = u.id;
-    const question = u.question;
+    const title = u.question;
     const text = u.text;
     const number = u.number;
     const imageUrl = u.imageUrl;
@@ -26,7 +26,7 @@ export default class QuestionModel {
 
     let questionModel = new QuestionModel(
       id,
-      question,
+      title,
       text,
       number,
       imageUrl,
