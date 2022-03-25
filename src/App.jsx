@@ -1,31 +1,21 @@
-
-import React, { useState } from "react";
-import { Route, Routes } from "react-router-dom";
-import { Home } from "./components/Home";
-import { Login } from "./components/Login";
-import { QuestionContainer } from "./components/QuestionContainer";
-import { Results } from "./components/Results";
-import { User } from "./components/User";
-import QuizController from "./controllers/QuizController";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import "./app.css";
-
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import './app.css';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import { Home } from './components/Home';
+import { Login } from './components/Login';
+import Quiz from './components/Quiz';
+import { Results } from './components/Results';
+import { User } from './components/User';
 
 function App() {
-  useState(() => {
-    new QuizController();
-    QuizController.instance.fetchNewQuiz('', 0, (quizModel) => {
-      console.log(quizModel);
-    });
-  }, []);
-
   return (
     <div>
       <Header />
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/question-container" element={<QuestionContainer />} />
+        <Route path="/quiz" element={<Quiz />} />
         <Route path="/results" element={<Results />} />
         <Route path="/user" element={<User />} />
         <Route path="/login" element={<Login />} />
