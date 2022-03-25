@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import './app.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import { Home } from './components/Home';
@@ -7,7 +8,6 @@ import { Login } from './components/Login';
 import Quiz from './components/Quiz';
 import { Results } from './components/Results';
 import { User } from './components/User';
-import QuizController from './controllers/QuizController';
 
 function App() {
   return (

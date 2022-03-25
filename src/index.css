@@ -21,11 +21,13 @@ html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
   scroll-behavior: smooth;
-  font-family: 'Outfit', serif;
+  font-family: "Outfit", serif;
   background-color: var(--background); }
 
 body {
   color: var(--text);
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column; }
 
 /*# sourceMappingURL=index.css.map */
