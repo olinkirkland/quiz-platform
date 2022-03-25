@@ -4,8 +4,9 @@ import { useLottie } from 'lottie-react';
 import logo from '../images/logo.png'
 import { Button, Typography, Link } from "@mui/material";
 
+import { Outlet, NavLink } from "react-router-dom";
 
-const HomeView = () => {
+export const Home = () => {
     const options = {
         animationData: DoneAnimation,
         loop: true,
@@ -17,12 +18,18 @@ const HomeView = () => {
     
       const { View } = useLottie(options);
 
-      return(
-          <>
-          <div>
-            <img src={logo} alt="logo"></img>
-          </div>
-          <div style={{display:'flex', flexDirection:'row'}}>
+  return (
+      <>
+        <nav>
+            <NavLink className="nav-link" to="/">
+            <img src={logo} alt="logo" />
+            </NavLink>
+            <NavLink className="nav-link" to="/login">
+            Login
+            </NavLink>
+        </nav>
+        <Outlet />
+        <div style={{display:'flex', flexDirection:'row'}}>
               <div style={{width:'50%'}}>
                 {View}
               </div>
@@ -41,12 +48,11 @@ const HomeView = () => {
                     <Link className='quizSet' href="#" color="inherit">Saxony</Link>
                 </div>
               </div>
-             
-            
-          </div>
-          </>
-      )
-}
 
+      <footer></footer>
+    </div>
+</>
+    
+  );
+};
 
-export default HomeView;
