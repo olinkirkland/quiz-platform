@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "question": "What Color has blue",
+    "text": "Select a color below",
+    "number": 1,
+    "imageUrl": "http://www.pics.com/abc.png",
+    "topic": "History",
+    "language": "US",
+    "answers": [
+      {
+        "id": 1,
+        "text": "blue",
+        "check": false
+      },
+      {
+        "id": 2,
+        "text": "yellow",
+        "check": false
+      },
+      {
+        "id": 3,
+        "text": "red",
+        "check": true
+      },
+      {
+        "id": 4,
+        "text": "black",
+        "check": false
+      },
+      {
+        "id": 5,
+        "text": "green",
+        "check": false
+      }
+    ]
+  }
+]

@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import QuizBuilder from './controllers/QuizBuilder';
+import QuizController from './controllers/QuizController';
 
 function App() {
   useState(() => {
-    console.log(new QuizBuilder());
+    console.log(new QuizController());
   }, []);
 
   return (
