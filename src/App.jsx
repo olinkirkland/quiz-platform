@@ -6,6 +6,8 @@ import { QuestionContainer } from './components/QuestionContainer';
 import { Results } from './components/Results';
 import { User } from './components/User';
 import QuizController from './controllers/QuizController';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   useState(() => {
@@ -14,7 +16,7 @@ function App() {
 
   return (
     <div>
-      <h1>Test your knowledge about Germany</h1>
+      <Header />
       <Routes>
         <Route index element={<Home />} />
         <Route path="/question-container" element={<QuestionContainer />} />
@@ -23,6 +25,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<div>NotFound</div>} />
       </Routes>
+      <Footer />
     </div>
   );
 }
