@@ -10,6 +10,10 @@ export default class QuestionModel {
     this.answers = answers;
   }
 
+  checkAnswer(answerId) {
+    return true;
+  }
+
   static fromUntyped(u) {
     const id = u.id;
     const question = u.question;
@@ -30,6 +34,7 @@ export default class QuestionModel {
       language,
       answers
     );
+
     return questionModel;
   }
 }
