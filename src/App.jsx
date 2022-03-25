@@ -1,12 +1,17 @@
-import { Routes, Route } from "react-router-dom";
-import React from "react";
-import { QuestionContainer } from "./components/QuestionContainer";
-import { Results } from "./components/Results";
-import { User } from "./components/User";
-import { Login } from "./components/Login";
-import { Home } from "./components/Home";
+import React, { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { Home } from './components/Home';
+import { Login } from './components/Login';
+import { QuestionContainer } from './components/QuestionContainer';
+import { Results } from './components/Results';
+import { User } from './components/User';
+import QuizController from './controllers/QuizController';
 
 function App() {
+  useState(() => {
+    console.log(new QuizController());
+  }, []);
+
   return (
     <div>
       <h1>Test your knowledge about Germany</h1>
