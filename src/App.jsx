@@ -12,6 +12,9 @@ import Footer from './components/Footer';
 function App() {
   useState(() => {
     new QuizController();
+    QuizController.instance.fetchNewQuiz('', 0, (quizModel) => {
+      console.log(quizModel);
+    });
   }, []);
 
   return (

@@ -13,8 +13,14 @@ export default class QuizController {
   }
 
   fetchNewQuiz(topic, questionCount, callback) {
-    // Gets a quiz
-    let quiz = QuizModel.fromUntyped(mock);
-    setTimeout(callback(quiz), 500);
+    // Fetches a quiz
+    setTimeout(() => {
+      let quiz = QuizModel.fromUntyped(mock);
+      callback(quiz);
+    }, 500);
+  }
+
+  submitQuizResults(quizModel) {
+    // Submits a completed quiz
   }
 }
