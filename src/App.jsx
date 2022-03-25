@@ -1,3 +1,4 @@
+
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import React from "react";
@@ -20,6 +21,7 @@ function App() {
         <Route path="*" element={<div>NotFound</div>} />
       </Routes>
     </div>
+
   );
 }
 
