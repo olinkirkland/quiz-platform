@@ -1,7 +1,9 @@
+import HomeView from "./components/Home";
+
 function App() {
   return (
     <>
-      <p>Hello World</p>
+      <HomeView />
     </>
   );
 }
